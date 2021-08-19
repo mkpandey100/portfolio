@@ -1,0 +1,9 @@
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\bin\Debug\netcoreapp3.1\Portfolio.Core.API.deps.json
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\bin\Debug\netcoreapp3.1\Portfolio.Core.API.dll
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\bin\Debug\netcoreapp3.1\Portfolio.Core.API.pdb
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\obj\Debug\netcoreapp3.1\Portfolio.Core.API.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\obj\Debug\netcoreapp3.1\Portfolio.Core.API.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\obj\Debug\netcoreapp3.1\Portfolio.Core.API.AssemblyInfo.cs
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\obj\Debug\netcoreapp3.1\Portfolio.Core.API.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\obj\Debug\netcoreapp3.1\Portfolio.Core.API.dll
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Core.API\obj\Debug\netcoreapp3.1\Portfolio.Core.API.pdb

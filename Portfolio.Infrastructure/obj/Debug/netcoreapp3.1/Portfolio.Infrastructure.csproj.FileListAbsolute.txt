@@ -1,0 +1,15 @@
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\bin\Debug\netcoreapp3.1\Portfolio.Infrastructure.deps.json
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\bin\Debug\netcoreapp3.1\Portfolio.Infrastructure.dll
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\bin\Debug\netcoreapp3.1\Portfolio.Infrastructure.pdb
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\bin\Debug\netcoreapp3.1\Portfolio.Domain.dll
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\bin\Debug\netcoreapp3.1\Portfolio.Domain.pdb
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\obj\Debug\netcoreapp3.1\Portfolio.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\obj\Debug\netcoreapp3.1\Portfolio.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\obj\Debug\netcoreapp3.1\Portfolio.Infrastructure.AssemblyInfo.cs
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\obj\Debug\netcoreapp3.1\Portfolio.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\obj\Debug\netcoreapp3.1\Portfolio.Infrastructure.csproj.CopyComplete
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\obj\Debug\netcoreapp3.1\Portfolio.Infrastructure.dll
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\obj\Debug\netcoreapp3.1\Portfolio.Infrastructure.pdb
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\bin\Debug\netcoreapp3.1\Portfolio.Infrastructure.runtimeconfig.json
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\bin\Debug\netcoreapp3.1\Portfolio.Infrastructure.runtimeconfig.dev.json
+C:\Users\USER\Desktop\Portfolio.API\Portfolio.Infrastructure\obj\Debug\netcoreapp3.1\Portfolio.Infrastructure.genruntimeconfig.cache
