@@ -232,12 +232,4 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
-/NowCFO.WebAPI/Properties/PublishProfiles/FolderProfile.pubxml
-.fake/
-/NowCFO.WebAPI/Properties/PublishProfiles/*
-/NowCFO.WebAPI/wwwroot/Uploads/*
-*.pubxml
-/NowCFO.WebAPI/wwwroot/Logs
-/NowCFO.WebAPI/wwwroot/Dll
-/NowCFO.WebAPI/DinkToPdf/Dll/libwkhtmltox.dll
 /.sonarqube
