@@ -1,17 +1,24 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Portfolio.API.Helper;
 using Portfolio.Application.Extension;
+using Portfolio.Domain.Entities.Jwt;
 using Portfolio.Infrastructure.Extension;
 using System;
+using System.Text;
 
 namespace Portfolio.API
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,10 +33,48 @@ namespace Portfolio.API
             services.AddApplication();
             services.AddInfrastructure(Configuration);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddSwaggerGen(config =>
+            //services.AddSwaggerGen(config =>
+            //{
+            //    config.SwaggerDoc("v1", new OpenApiInfo() { Title = "CQRS Forum", Version = "v1" });
+            //});
+
+            services.AddSwaggerGen(swagger =>
             {
-                config.SwaggerDoc("v1", new OpenApiInfo() { Title = "CQRS Forum", Version = "v1" });
+                //This is to generate the Default UI of Swagger Documentation  
+                swagger.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "JWT Token Authentication API",
+                    Description = "ASP.NET Core 3.1 Web API"
+                });
+                // To Enable authorization using Swagger (JWT)  
+                swagger.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\"",
+                });
+                swagger.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                          new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Bearer"
+                                }
+                            },
+                            new string[] {}
+
+                    }
+                });
             });
+
+            services.AddJwtValidation(Configuration);
 
             services.AddRouting(options =>
             {
@@ -63,6 +108,7 @@ namespace Portfolio.API
             app.UseAuthentication();
             app.UseAuthorization();
 
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
@@ -71,6 +117,7 @@ namespace Portfolio.API
             app.UseSwagger();
 
             app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "CQRS Forum v1"));
+            //app.UseMiddleware<JwtMiddleware>();
         }
     }
 }

@@ -37,7 +37,7 @@ namespace Portfolio.Application.User.Commands.CreateUser
             };
 
             var result = await _userManager.CreateAsync(applicationUser, request.Password);
-            return true;
+            return result.Succeeded;
         }
     }
 }
