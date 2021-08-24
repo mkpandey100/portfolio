@@ -864,7 +864,7 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Logging/6.11.0": {
+      "Microsoft.IdentityModel.Logging/6.12.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
@@ -900,11 +900,11 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
         }
       },
-      "Microsoft.IdentityModel.Tokens/6.11.0": {
+      "Microsoft.IdentityModel.Tokens/6.12.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Microsoft.IdentityModel.Logging": "6.11.0",
+          "Microsoft.IdentityModel.Logging": "6.12.2",
           "System.Security.Cryptography.Cng": "4.5.0"
         },
         "compile": {
@@ -3041,6 +3041,7 @@
         "dependencies": {
           "FluentValidation": "10.1.0",
           "MediatR": "9.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.DependencyInjection": "5.0.2"
         },
@@ -3055,7 +3056,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "AspNetCore.Identity.MongoDbCore": "3.1.1"
+          "AspNetCore.Identity.MongoDbCore": "3.1.1",
+          "Microsoft.IdentityModel.Tokens": "6.12.2"
         },
         "compile": {
           "bin/placeholder/Portfolio.Domain.dll": {}
@@ -4228,10 +4230,10 @@
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/6.11.0": {
-      "sha512": "81votFg2SzidAB8frGlDV+jCCzfBWWtnKASZTddAziHuB8fT/82s1x7Kty+u01XKtKcrPdfpvbWrIUHdc/C9pw==",
+    "Microsoft.IdentityModel.Logging/6.12.2": {
+      "sha512": "MGjGS5PIxGOdDSo3DzjqZ4qfy2i75R/CGE3aehCkflb4Brh617jg5F6GoFze321PMK1bjqiqQUFtGVuMKojDWg==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/6.11.0",
+      "path": "microsoft.identitymodel.logging/6.12.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4243,7 +4245,7 @@
         "lib/net472/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.6.11.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.6.12.2.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
@@ -4289,10 +4291,10 @@
         "microsoft.identitymodel.protocols.openidconnect.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/6.11.0": {
-      "sha512": "zm0aBLKCDybRQwOinG0cDXobjfcJgXIcJfB5n7gA8KHjswELcET8BiNx54j6n4VF8w6+UxUIdEtO3RMIXQZkfg==",
+    "Microsoft.IdentityModel.Tokens/6.12.2": {
+      "sha512": "qG/UJzrcPYVEMHgP6X4Nko0yeLIwr4dM2qZvIC91WYMmt1zGvDWW9ybqGBOQAs3A5Wf2M1PozobHDGRW3MmINQ==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/6.11.0",
+      "path": "microsoft.identitymodel.tokens/6.12.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4304,7 +4306,7 @@
         "lib/net472/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.6.11.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.6.12.2.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -9586,49 +9588,43 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Sumeet Maharjan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.API\\Portfolio.API.csproj",
+      "projectUniqueName": "D:\\asp\\portfolio\\Portfolio.API\\Portfolio.API.csproj",
       "projectName": "Portfolio.API",
-      "projectPath": "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.API\\Portfolio.API.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.API\\obj\\",
+      "projectPath": "D:\\asp\\portfolio\\Portfolio.API\\Portfolio.API.csproj",
+      "packagesPath": "C:\\Users\\Sumeet Maharjan\\.nuget\\packages\\",
+      "outputPath": "D:\\asp\\portfolio\\Portfolio.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Sumeet Maharjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/BFP0419/QKLY-API-MEX/_packaging/Qkly.Core/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.Application\\Portfolio.Application.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.Application\\Portfolio.Application.csproj"
+            "D:\\asp\\portfolio\\Portfolio.Application\\Portfolio.Application.csproj": {
+              "projectPath": "D:\\asp\\portfolio\\Portfolio.Application\\Portfolio.Application.csproj"
             },
-            "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.Core.API\\Portfolio.Core.API.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.Core.API\\Portfolio.Core.API.csproj"
+            "D:\\asp\\portfolio\\Portfolio.Core.API\\Portfolio.Core.API.csproj": {
+              "projectPath": "D:\\asp\\portfolio\\Portfolio.Core.API\\Portfolio.Core.API.csproj"
             },
-            "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.Domain\\Portfolio.Domain.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.Domain\\Portfolio.Domain.csproj"
+            "D:\\asp\\portfolio\\Portfolio.Domain\\Portfolio.Domain.csproj": {
+              "projectPath": "D:\\asp\\portfolio\\Portfolio.Domain\\Portfolio.Domain.csproj"
             },
-            "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.Infrastructure\\Portfolio.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\Portfolio.API\\Portfolio.Infrastructure\\Portfolio.Infrastructure.csproj"
+            "D:\\asp\\portfolio\\Portfolio.Infrastructure\\Portfolio.Infrastructure.csproj": {
+              "projectPath": "D:\\asp\\portfolio\\Portfolio.Infrastructure\\Portfolio.Infrastructure.csproj"
             }
           }
         }
@@ -9680,7 +9676,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
