@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Portfolio.Domain.Models.User;
+using Portfolio.Domain.Entities.User;
 using Portfolio.Domain.Settings;
 using System;
 

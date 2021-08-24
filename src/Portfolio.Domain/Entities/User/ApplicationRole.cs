@@ -2,10 +2,11 @@
 using MongoDbGenericRepository.Attributes;
 using System;
 
-namespace Portfolio.Domain.Models.User
+namespace Portfolio.Domain.Entities.User
 {
     [CollectionName("Roles")]
     public class ApplicationRole : MongoIdentityRole<Guid>
     {
+
     }
 }

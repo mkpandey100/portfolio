@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Portfolio.Application.User.Models;
-using Portfolio.Domain.Models.User;
+using Portfolio.Domain.Entities.User;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
